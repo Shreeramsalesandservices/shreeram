@@ -1,0 +1,265 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+/* About Us Section */
+.about {
+    background: #f8f9fc;
+    padding: 60px 20px;
+}
+
+.about .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.about .heading {
+    grid-column: span 2;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #005cbf;
+    margin-bottom: 40px;
+}
+.about-text {
+    font-size: 1.2rem;
+}
+
+.about-text h2 {
+    font-size: 2.2rem;
+    color: #005cbf;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #555;
+}
+.about-image {
+    overflow-x: auto; /* Enable horizontal scrolling if necessary */
+    display: block;
+    text-align: center; /* Center the image for mobile */
+}
+
+.about-image img {
+    width: 100%;
+    justify-self: center;
+    height: auto;
+    max-width: 450px;
+    max-width: 450px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* How It Works Section */
+.how-it-works {
+    background: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.how-it-works h2 {
+    color: #005cbf;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.how-it-works p {
+    font-size: 1rem;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Professional Team Section */
+.professional-team {
+    background: #f8f9fc;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.professional-team h2 {
+    color: #005cbf;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.professional-team p {
+    font-size: 1rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Versatile Services Section */
+.services {
+    background: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    color: #005cbf;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.services p {
+    max-width: 800px;
+    margin: 0 auto 30px;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+.services ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.services ul li {
+    margin: 10px 0;
+    padding-left: 30px;
+    font-size: 1rem;
+    position: relative;
+    text-align: left;
+}
+
+.services ul li::before {
+    content: "✔️";
+    position: absolute;
+    left: 0;
+    color: green;
+    font-size: 1.2rem;
+}
+
+/* Mission & Vision Section */
+.mission-vision {
+    background: linear-gradient(135deg,#afd3fd, #f9f9f9);
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.mission-vision .container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.mission-vision .card {
+    background: #fff;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mission-vision .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.mission-vision .card i {
+    font-size: 3rem;
+    color: #005cbf;
+    margin-bottom: 15px;
+}
+
+.mission-vision .card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.mission-vision .card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+
+/* Responsive Design */
+/* Responsive Design for Tablet and Mobile */
+@media (max-width: 992px) {
+    /* Adjust the grid to stack items vertically */
+    .about .container {
+        grid-template-columns: 1fr; /* One column */
+        gap: 20px; /* Reduce gap */
+        text-align: center; /* Center-align text */
+    }
+
+    .about-text {
+        max-width: 100%; /* Full width */
+        margin-bottom: 20px;
+    }
+
+    @media (max-width: 768px) {
+        .about .container {
+            display: flex; /* Stack items vertically */
+            flex-direction: column;
+        }
+    
+        .about-text {
+            text-align: center; /* Center text on mobile */
+            margin-bottom: 20px; /* Add space below text */
+        }
+    
+        .about-image {
+            margin-top: 20px; /* Space between text and image */
+        }
+    
+        .about-image img {
+            max-width: 100%; /* Image takes full width of the container */
+            height: auto; /* Maintain aspect ratio */
+        }
+    }
+
+    /* Additional Styling for Mission & Vision Cards */
+    .mission-vision .container {
+        flex-direction: column; /* Stack cards vertically */
+        gap: 15px; /* Reduce spacing */
+    }
+
+    .mission-vision .card {
+        width: 100%; /* Full width for mobile view */
+        padding: 15px;
+    }
+
+    .mission-vision .card h3 {
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+    }
+
+    .mission-vision .card p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
+    /* Services Section Adjustments */
+    .services h2 {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+
+    .services ul {
+        padding: 0 15px; /* Add padding to edges */
+    }
+
+    .services ul li {
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+        padding-left: 25px; /* Adjust for smaller screens */
+    }
+}
