@@ -14,7 +14,7 @@ document.querySelector('.contact-form').addEventListener('submit', function (e) 
     }
 
     // Format message
-    const whatsappNumber = '919226353150'; // Replace with your WhatsApp number (international format)
+    const whatsappNumber = '9156994591'; // Replace with your WhatsApp number (international format)
     const whatsappMessage = `Hello, this is a message from the Contact Form:\n\nName: ${name}\nEmail: ${email}\nSubject: ${subject}\nMessage: ${message}`;
 
     // Open WhatsApp Web with the pre-filled message
